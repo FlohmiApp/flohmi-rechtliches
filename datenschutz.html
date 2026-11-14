@@ -47,9 +47,9 @@ footer { margin-top: 40px; padding: 16px; color: var(--hell); font-size: 0.9rem;
 </header>
 <main>
 <h1>Datenschutzerklärung</h1>
-<p class="hinweis"><strong>Entwurf, noch nicht rechtlich geprüft.</strong> Diese Fassung beschreibt, welche Daten Flohmi technisch tatsächlich verarbeitet (Stand: 12. November 2026, Abschnitt 4b „Zum Kalender hinzufügen“ neu, Abschnitt 6c zur Anmeldung mit Google neu, Abschnitt 6a verweist auf die Seite „Konto löschen“, Abschnitt 2 um die Standort-Berechtigung der Android-App ergänzt; 11. November 2026: Abschnitt 6b zu Erinnerungen an Favoriten neu; 10. November 2026: Abschnitt 6 ergänzt um öffentliche Kontaktwege und die Bestätigung für Kontaktdaten, Abschnitt 5a zum Laden der Märkte neu). Sie muss vor der Veröffentlichung der App rechtlich geprüft werden. Alles in [eckigen Klammern] fehlt noch.</p>
+<p class="hinweis"><strong>Entwurf, noch nicht rechtlich geprüft.</strong> Diese Fassung beschreibt, welche Daten Flohmi technisch tatsächlich verarbeitet (Stand: 14. November 2026, Abschnitt 1 „Verantwortliche“ und Abschnitt 8 „Deine Rechte“ ausgefüllt, Abschnitt 4c „Teilen“ neu; 12. November 2026: Abschnitt 4b „Zum Kalender hinzufügen“ neu, Abschnitt 6c zur Anmeldung mit Google neu, Abschnitt 6a verweist auf die Seite „Konto löschen“, Abschnitt 2 um die Standort-Berechtigung der Android-App ergänzt; 11. November 2026: Abschnitt 6b zu Erinnerungen an Favoriten neu; 10. November 2026: Abschnitt 6 ergänzt um öffentliche Kontaktwege und die Bestätigung für Kontaktdaten, Abschnitt 5a zum Laden der Märkte neu). Sie muss vor der Veröffentlichung der App rechtlich geprüft werden. Alles in [eckigen Klammern] fehlt noch.</p>
 <h2>1. Verantwortliche</h2>
-<p>[Name, Anschrift, E-Mail-Adresse der Verantwortlichen]</p>
+<p>Sarah Schwarz<br>Zweibrücker Straße 27a<br>76829 Landau<br>Deutschland<br>E-Mail: Flohman@proton.me</p>
 <h2>2. Was Flohmi auf deinem Gerät speichert</h2>
 <p>Flohmi setzt keine Cookies und nutzt kein Tracking. Einige Einstellungen speichert die App im Browserspeicher (localStorage) deines Geräts. Sie verlassen dein Gerät nicht:</p>
 <div class="tabelle"><table>
@@ -88,6 +88,13 @@ footer { margin-top: 40px; padding: 16px; color: var(--hell); font-size: 0.9rem;
   <li><strong>Auf Android-Geräten</strong> öffnet Flohmi den ausgefüllten Termin in Google Kalender (in der Kalender-App von Google oder im Browser). Erst beim Tippen werden dafür Name, Datum, Uhrzeit und Adresse des Marktes an Google übergeben. Ab diesem Moment gelten die Datenschutzbestimmungen von Google (<a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a>); Google erhält dabei unter anderem deine IP-Adresse und ordnet den Termin deinem Google-Konto zu, wenn du ihn speicherst.</li>
 </ul>
 <p>Damit Flohmi dich warnen kann, bevor du denselben Markt doppelt einträgst, merkt sich die App auf deinem Gerät, welche Märkte du schon übergeben hast (<code>flohmi-kalender</code>, siehe Abschnitt 2). [Rechtsgrundlage prüfen, zum Beispiel Art. 6 Abs. 1 lit. f DSGVO; Übermittlung in die USA.]</p>
+<h2>4c. Teilen</h2>
+<p>Mit „Teilen“ in der Detailansicht eines Marktes kannst du einen Termin an andere schicken. Flohmi stellt dafür einen Text zusammen: Name, Datum, Uhrzeit und Adresse des Marktes und einen Link zu Google Maps mit der Adresse. Angaben über dich enthält der Text nicht.</p>
+<ul>
+  <li><strong>In der Android-App und im Browser am Handy</strong> öffnet sich der Teilen-Dialog deines Geräts. Du wählst selbst, an welche App (zum Beispiel einen Messenger oder E-Mail) der Text geht. Ab dann gelten die Datenschutzbestimmungen dieser App.</li>
+  <li><strong>Ohne Teilen-Dialog</strong> (zum Beispiel am PC) kopiert Flohmi den Text in die Zwischenablage deines Geräts; er bleibt dort, bis du ihn einfügst.</li>
+</ul>
+<p>Flohmi selbst übermittelt dabei nichts, weder an sich noch an Dritte, und erfährt nicht, ob und mit wem du geteilt hast. Öffnet jemand den Kartenlink, gelten die Datenschutzbestimmungen von Google (siehe Abschnitt 4a).</p>
 <h2>5. Kartenbibliothek Leaflet (unpkg)</h2>
 <p>Die Kartenbibliothek Leaflet wird beim Öffnen der App von unpkg.com geladen. Dabei erhält der Betreiber von unpkg deine IP-Adresse und Angaben zu deinem Browser. [Anbieter, Sitz und Datenschutzerklärung von unpkg ergänzen; Rechtsgrundlage. Alternative: Leaflet direkt mit der App ausliefern, dann entfällt dieser Abschnitt.]</p>
 <h2>5a. Märkte laden (Supabase)</h2>
@@ -130,7 +137,18 @@ footer { margin-top: 40px; padding: 16px; color: var(--hell); font-size: 0.9rem;
 <h2>7. Marktdaten aus offenen Quellen</h2>
 <p>Die angezeigten Termine stammen unter anderem aus dem Veranstaltungskalender der Stadt Karlsruhe (Lizenz CC0). Beim Anzeigen dieser Daten werden keine Daten über dich an diese Quellen übermittelt.</p>
 <h2>8. Deine Rechte</h2>
-<p>[Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch, Datenübertragbarkeit, Widerruf der Einwilligung, Beschwerderecht bei einer Aufsichtsbehörde; Kontaktweg für Löschwünsche nennen.]</p>
+<p>Du hast nach der Datenschutz-Grundverordnung (DSGVO) das Recht auf:</p>
+<ul>
+  <li><strong>Auskunft</strong> über die Daten, die zu dir gespeichert sind (Art. 15 DSGVO)</li>
+  <li><strong>Berichtigung</strong> falscher Daten (Art. 16 DSGVO)</li>
+  <li><strong>Löschung</strong> deiner Daten (Art. 17 DSGVO)</li>
+  <li><strong>Einschränkung</strong> der Verarbeitung (Art. 18 DSGVO)</li>
+  <li><strong>Datenübertragbarkeit</strong> (Art. 20 DSGVO)</li>
+  <li><strong>Widerspruch</strong> gegen eine Verarbeitung, die auf berechtigtem Interesse beruht (Art. 21 DSGVO)</li>
+  <li><strong>Widerruf</strong> einer Einwilligung mit Wirkung für die Zukunft (Art. 7 Abs. 3 DSGVO)</li>
+</ul>
+<p><strong>Kontakt:</strong> Für alle diese Anliegen, auch für Löschwünsche und das Entfernen veröffentlichter Kontaktdaten, schreib eine E-Mail an <strong>Flohman@proton.me</strong>. Dein Konto kannst du außerdem jederzeit selbst in der App löschen (Abschnitt 6a).</p>
+<p>Du hast außerdem das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren (Art. 77 DSGVO), zum Beispiel beim Landesbeauftragten für den Datenschutz und die Informationsfreiheit Rheinland-Pfalz.</p>
 </main>
 <footer>
   Flohmi zeigt Flohmärkte rund um Landau. Diese Seiten entstehen automatisch aus den Texten der App.
