@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung – Flohmi</title>
+<style>
+:root { color-scheme: light dark; --text: #2A2140; --hell: #5E566E; --grund: #FBF7EF; --flaeche: #F3EEE6; --rand: #E3DCCD; --link: #6A4FA3; }
+@media (prefers-color-scheme: dark) {
+  :root { --text: #F3EEE6; --hell: #A79FB5; --grund: #1C1726; --flaeche: #312A3C; --rand: #40384D; --link: #B9A6E8; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--grund); color: var(--text);
+  font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+header, main, footer { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+header { padding-top: 20px; }
+.marke { font-weight: 700; font-size: 1.25rem; color: var(--text); text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 10px 0 0; padding-bottom: 12px;
+  border-bottom: 1px solid var(--rand); }
+nav a { color: var(--link); }
+nav a[aria-current="page"] { color: var(--text); font-weight: 600; text-decoration: none; }
+h1 { font-size: 1.7rem; line-height: 1.25; margin: 24px 0 12px; }
+h2 { font-size: 1.25rem; margin: 28px 0 8px; }
+h3 { font-size: 1.05rem; margin: 20px 0 6px; }
+a { color: var(--link); overflow-wrap: anywhere; }
+.hinweis { background: var(--flaeche); border-left: 4px solid var(--rand); padding: 10px 14px; }
+.tabelle { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+th, td { border: 1px solid var(--rand); padding: 6px 8px; text-align: left; vertical-align: top; }
+th { background: var(--flaeche); }
+code { font-size: 0.92em; overflow-wrap: anywhere; }
+pre { background: var(--flaeche); padding: 12px; overflow-x: auto; font-size: 0.85rem; white-space: pre-wrap; }
+footer { margin-top: 40px; padding: 16px; color: var(--hell); font-size: 0.9rem;
+  border-top: 1px solid var(--rand); }
+</style>
+</head>
+<body>
+<header>
+  <a class="marke" href="index.html">Flohmi</a>
+  <nav aria-label="Rechtliches">
+    <a href="datenschutz.html" aria-current="page">Datenschutzerklärung</a>
+    <a href="konto-loeschen.html">Konto löschen</a>
+    <a href="impressum.html">Impressum</a>
+    <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>
+    <a href="lizenzen.html">Open-Source-Lizenzen</a>
+  </nav>
+</header>
+<main>
+<h1>Datenschutzerklärung</h1>
+<p class="hinweis"><strong>Entwurf, noch nicht rechtlich geprüft.</strong> Diese Fassung beschreibt, welche Daten Flohmi technisch tatsächlich verarbeitet (Stand: 12. November 2026, Abschnitt 4b „Zum Kalender hinzufügen“ neu, Abschnitt 6c zur Anmeldung mit Google neu, Abschnitt 6a verweist auf die Seite „Konto löschen“, Abschnitt 2 um die Standort-Berechtigung der Android-App ergänzt; 11. November 2026: Abschnitt 6b zu Erinnerungen an Favoriten neu; 10. November 2026: Abschnitt 6 ergänzt um öffentliche Kontaktwege und die Bestätigung für Kontaktdaten, Abschnitt 5a zum Laden der Märkte neu). Sie muss vor der Veröffentlichung der App rechtlich geprüft werden. Alles in [eckigen Klammern] fehlt noch.</p>
+<h2>1. Verantwortliche</h2>
+<p>[Name, Anschrift, E-Mail-Adresse der Verantwortlichen]</p>
+<h2>2. Was Flohmi auf deinem Gerät speichert</h2>
+<p>Flohmi setzt keine Cookies und nutzt kein Tracking. Einige Einstellungen speichert die App im Browserspeicher (localStorage) deines Geräts. Sie verlassen dein Gerät nicht:</p>
+<div class="tabelle"><table>
+<thead><tr><th>Eintrag</th><th>Zweck</th></tr></thead>
+<tbody>
+<tr><td><code>flohmi-startort</code></td><td>der zuletzt gewählte Startpunkt, damit er beim nächsten Start wieder ausgewählt ist</td></tr>
+<tr><td><code>flohmi-ortssuche</code></td><td>Ergebnisse früherer Ortssuchen, damit dieselbe Suche nicht erneut gesendet wird (höchstens 30)</td></tr>
+<tr><td><code>flohmi-adresssuche</code></td><td>Ergebnisse früherer Adresssuchen beim Melden (Straße, PLZ, Ort und die gefundenen Adressen), damit dieselbe Suche nicht erneut gesendet wird (höchstens 30)</td></tr>
+<tr><td><code>flohmi-maerkte</code></td><td>die zuletzt geladene Liste der Märkte, damit Flohmi auch ohne Internet etwas anzeigt</td></tr>
+<tr><td><code>flohmi-letzte-meldung</code></td><td>Zeitpunkt deiner letzten Marktmeldung, als Schutz vor Spam (eine Meldung pro Minute)</td></tr>
+<tr><td><code>flohmi-favoriten</code></td><td>nur noch aus älteren Versionen: ohne Konto gemerkte Märkte; sie werden bei deiner nächsten Anmeldung in dein Konto übernommen und dann hier gelöscht</td></tr>
+<tr><td><code>flohmi-sprache</code></td><td>die gewählte Sprache der App (Deutsch, Englisch, Französisch oder Polnisch)</td></tr>
+<tr><td><code>flohmi-erinnerungen</code></td><td>nur in der Android-App: ob du Erinnerungen an Favoriten eingeschaltet hast</td></tr>
+<tr><td><code>flohmi-kalender</code></td><td>welche Märkte du schon mit „Zum Kalender hinzufügen“ übergeben hast (Markt-ID und Datum), damit Flohmi vor doppelten Einträgen warnt; vergangene Märkte werden automatisch entfernt</td></tr>
+<tr><td><code>flohmi-anmeldung</code></td><td>nur wenn du angemeldet bist: der Anmeldeschlüssel deines Kontos, damit du angemeldet bleibst; wird beim Abmelden gelöscht</td></tr>
+</tbody>
+</table></div>
+<p>Du kannst diese Einträge jederzeit löschen, indem du die Website-Daten im Browser löschst oder in der Android-App unter Einstellungen → Apps → Flohmi → Speicher die Daten löschst.</p>
+<p>„Mein Standort“ wird nur auf deinem Gerät verwendet, um Entfernungen zu berechnen. Die Position wird nicht gespeichert und an niemanden übermittelt.</p>
+<p><strong>Standort in der Android-App:</strong> Damit „Meinen Standort verwenden“ funktioniert, fragt die App beim ersten Tippen nach der Android-Berechtigung „Standort“. Ab Android 12 fragt Flohmi nur den <strong>ungefähren Standort</strong> an, das reicht für Entfernungen. Auf Android 11 und älter kennt Android diese Auswahl nicht, dort gilt die Erlaubnis für den Standort allgemein. Den Standort ermittelt Android selbst (z. B. über WLAN und Mobilfunk). Flohmi fragt ihn nur ab, wenn du auf den Knopf tippst, nie im Hintergrund. Du kannst die Berechtigung jederzeit in den Android-Einstellungen unter Apps → Flohmi → Berechtigungen → Standort widerrufen. Ohne Berechtigung funktioniert die Ortssuche weiter.</p>
+<h2>3. Ortssuche mit OpenStreetMap (Nominatim)</h2>
+<p>Wenn du im Feld „Stadt oder PLZ“ auf „Suchen“ tippst, sendet Flohmi deinen <strong>Suchbegriff</strong> (den eingegebenen Ortsnamen oder die Postleitzahl) an den Dienst <strong>Nominatim</strong> der OpenStreetMap Foundation. Dabei erhält Nominatim technisch bedingt auch deine <strong>IP-Adresse</strong>, die Adresse der Seite, von der die Anfrage kommt (Referer), und Angaben zu deinem Browser. [Falls in der App eine Kontaktadresse für Nominatim eingetragen ist: Zusätzlich wird diese Kontaktadresse der Betreiberin mitgesendet, damit die Anfragen der App zugeordnet werden können.]</p>
+<p>Beim <strong>Melden eines Marktes</strong> kannst du auf „Adresse suchen“ tippen. Dann sendet Flohmi die eingegebene <strong>Straße mit Hausnummer</strong> sowie, falls schon ausgefüllt, <strong>PLZ und Ort</strong> an Nominatim, um passende vollständige Adressen vorzuschlagen. Auch hier erhält Nominatim deine IP-Adresse und Angaben zu deinem Browser.</p>
+<p>Es wird nur gesucht, wenn du die Suche ausdrücklich startest, nicht schon während des Tippens. Eine Suche, die auf deinem Gerät bereits gespeichert ist (siehe Abschnitt 2), wird nicht erneut gesendet.</p>
+<p>Die Vorschläge, die schon beim Tippen erscheinen, berechnet Flohmi vollständig auf deinem Gerät aus einer mitgelieferten Postleitzahlen-Liste (GeoNames, CC BY 4.0). Dabei wird nichts übermittelt. Wählst du einen Vorschlag aus, geht ebenfalls keine Anfrage an Nominatim.</p>
+<p>Anbieter: OpenStreetMap Foundation, St John’s Innovation Centre, Cowley Road, Cambridge, CB4 0WS, Vereinigtes Königreich. Datenschutzerklärung: <a href="https://osmfoundation.org/wiki/Privacy_Policy" rel="noopener">https://osmfoundation.org/wiki/Privacy_Policy</a></p>
+<p>[Rechtsgrundlage, zum Beispiel Art. 6 Abs. 1 lit. f DSGVO: berechtigtes Interesse an einer funktionierenden Ortssuche. Übermittlung in ein Drittland (Vereinigtes Königreich, Angemessenheitsbeschluss der EU-Kommission) prüfen.]</p>
+<h2>4. Karte (OpenStreetMap-Kacheln)</h2>
+<p>Die Karte lädt Kartenbilder von den Servern der OpenStreetMap Foundation (tile.openstreetmap.org). Dabei erhält die OpenStreetMap Foundation deine IP-Adresse, die Referer-Adresse und Angaben zu deinem Browser. Anbieter und Datenschutzerklärung wie in Abschnitt 3. [Rechtsgrundlage]</p>
+<h2>4a. Route planen (Google Maps, Apple Karten)</h2>
+<p>Erst wenn du in der Detailansicht eines Marktes auf „Route planen“ tippst, öffnet Flohmi eine Karten-App: auf Android-Geräten und am PC Google Maps, auf iPhone und iPad Apple Karten. Dabei werden die Koordinaten oder die Adresse des Marktes als Ziel übergeben. Ab diesem Moment gelten die Datenschutzbestimmungen von Google (<a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a>) bzw. Apple (<a href="https://www.apple.com/de/legal/privacy/" rel="noopener">https://www.apple.com/de/legal/privacy/</a>). Der Anbieter erhält dann unter anderem deine IP-Adresse und, je nach Einstellung, deinen Standort für die Route. Solange du nicht tippst, wird nichts an Google oder Apple übermittelt. [Rechtsgrundlage prüfen, zum Beispiel Art. 6 Abs. 1 lit. f DSGVO; Übermittlung in die USA.]</p>
+<h2>4b. Zum Kalender hinzufügen</h2>
+<p>Mit „Zum Kalender hinzufügen“ in der Detailansicht eines Marktes kannst du den Termin in deinen Kalender übernehmen. Flohmi greift dabei <strong>nicht</strong> auf deinen Kalender zu: Es fragt keine Kalender-Berechtigung an, liest keine vorhandenen Termine und trägt nichts selbst ein. Du siehst den Termin vorher und speicherst ihn selbst.</p>
+<ul>
+  <li><strong>Auf iPhone, iPad und am PC</strong> erzeugt Flohmi auf deinem Gerät eine Kalenderdatei (.ics) mit Name, Datum, Uhrzeit und Adresse des Marktes. Sie wird nirgendwohin gesendet; dein Gerät öffnet sie mit deiner Kalender-App.</li>
+  <li><strong>Auf Android-Geräten</strong> öffnet Flohmi den ausgefüllten Termin in Google Kalender (in der Kalender-App von Google oder im Browser). Erst beim Tippen werden dafür Name, Datum, Uhrzeit und Adresse des Marktes an Google übergeben. Ab diesem Moment gelten die Datenschutzbestimmungen von Google (<a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a>); Google erhält dabei unter anderem deine IP-Adresse und ordnet den Termin deinem Google-Konto zu, wenn du ihn speicherst.</li>
+</ul>
+<p>Damit Flohmi dich warnen kann, bevor du denselben Markt doppelt einträgst, merkt sich die App auf deinem Gerät, welche Märkte du schon übergeben hast (<code>flohmi-kalender</code>, siehe Abschnitt 2). [Rechtsgrundlage prüfen, zum Beispiel Art. 6 Abs. 1 lit. f DSGVO; Übermittlung in die USA.]</p>
+<h2>5. Kartenbibliothek Leaflet (unpkg)</h2>
+<p>Die Kartenbibliothek Leaflet wird beim Öffnen der App von unpkg.com geladen. Dabei erhält der Betreiber von unpkg deine IP-Adresse und Angaben zu deinem Browser. [Anbieter, Sitz und Datenschutzerklärung von unpkg ergänzen; Rechtsgrundlage. Alternative: Leaflet direkt mit der App ausliefern, dann entfällt dieser Abschnitt.]</p>
+<h2>5a. Märkte laden (Supabase)</h2>
+<p>Bei <strong>jedem Start</strong> lädt Flohmi automatisch die aktuelle Liste der Märkte von <strong>Supabase</strong> (Rechenzentrum in Frankfurt am Main, EU). Dafür musst du nichts tun und kein Konto haben. Abgefragt wird nur die öffentliche Marktliste; Angaben über dich, deinen Standort, deine Suche oder deine Favoriten schickt Flohmi dabei nicht mit.</p>
+<p>Technisch bedingt erhält Supabase bei dieser Anfrage deine <strong>IP-Adresse</strong>, den <strong>Zeitpunkt der Anfrage</strong>, die abgerufene Adresse und Angaben zu deinem Browser bzw. Gerät. Mitgesendet wird außerdem ein öffentlicher Zugangsschlüssel der App, der für alle gleich ist und nicht auf dich hinweist. Die geladene Liste speichert Flohmi auf deinem Gerät (<code>flohmi-maerkte</code>, siehe Abschnitt 2), damit beim nächsten Start ohne Internet trotzdem Märkte zu sehen sind. Ist Supabase nicht erreichbar, zeigt Flohmi diese gespeicherte oder die mit der App mitgelieferte Liste.</p>
+<p>Bist du angemeldet, verbindet sich Flohmi beim Start außerdem mit Supabase, um deine Anmeldung zu erneuern und deine Favoriten zu laden (siehe Abschnitt 6a).</p>
+<p>[Rechtsgrundlage, zum Beispiel Art. 6 Abs. 1 lit. f DSGVO: berechtigtes Interesse daran, aktuelle Termine anzuzeigen. Speicherdauer der Zugriffsprotokolle bei Supabase prüfen und nennen; Auftragsverarbeitungsvertrag mit Supabase (siehe Abschnitt 6).]</p>
+<h2>6. Markt melden (Supabase)</h2>
+<p>Wenn du einen Markt meldest, werden deine Angaben (Name des Marktes, Art, Datum, Uhrzeit, Adresse, Standgebühr, Eintritt sowie freiwillig Telefon, Mobil, E-Mail, Kontakt und Hinweis) bei Supabase in Frankfurt am Main (EU) gespeichert, damit die Meldung geprüft werden kann. Für die Koordinaten der Marktadresse wird die Adresse an Nominatim (Abschnitt 3) gesendet, bei Hofflohmärkten ohne Hausnummer.</p>
+<p><strong>Was nach der Freigabe öffentlich wird:</strong> die Marktangaben und, wenn du sie angegeben hast, <strong>Telefon, Mobil und E-Mail</strong>. Sie erscheinen beim Markt in Flohmi, damit Besucherinnen, Besucher, Händlerinnen und Händler nachfragen können, und sind für alle abrufbar, die Flohmi nutzen. Tippt jemand darauf, öffnet sein Gerät die Telefon- oder E-Mail-App; Flohmi erfährt davon nichts. <strong>Kontakt und Hinweis werden nie veröffentlicht</strong>, sie sind nur für die Prüfung der Meldung da.</p>
+<p>Gib bitte nur Telefonnummern und E-Mail-Adressen an, die veröffentlicht werden dürfen, also deine eigenen oder die der Veranstalterin bzw. des Veranstalters mit deren Einverständnis. Sobald du Telefon, Mobil oder E-Mail einträgst, musst du das mit einem eigenen Haken bestätigen. Ohne diesen Haken lässt sich die Meldung nicht absenden. Ob du ihn gesetzt hast, wird mit der Meldung gespeichert, damit die Bestätigung später nachvollziehbar ist. Diese Angabe wird nicht veröffentlicht.</p>
+<p><strong>Wenn du Veranstalterin oder Veranstalter bist</strong> und deine Kontaktdaten ohne dein Einverständnis in Flohmi stehen, melde dich unter dem Kontaktweg aus Abschnitt 8. Sie werden dann entfernt.</p>
+<p>Möchtest du, dass veröffentlichte Kontaktdaten wieder entfernt werden, melde dich unter dem Kontaktweg aus Abschnitt 8; sie werden dann aus Flohmi gelöscht. [Frist nennen, zum Beispiel innerhalb von 7 Tagen.] Nach dem Markttermin verschwindet der Markt mit seinen Kontaktdaten automatisch aus Flohmi (in der Regel wenige Stunden später). Auf Geräten, die Flohmi zuletzt ohne Internet geöffnet haben, kann die zuvor geladene Liste noch bis zur nächsten Verbindung gespeichert sein.</p>
+<p>Rechtsgrundlage ist deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), die du im Formular erteilst. Du kannst sie jederzeit für die Zukunft widerrufen. Für Kontaktdaten der Veranstalterin bzw. des Veranstalters ist Rechtsgrundlage deren Einwilligung, die du mit dem Haken bestätigst (Art. 6 Abs. 1 lit. a DSGVO). [Prüfen: Reicht die Bestätigung durch die meldende Person aus, oder muss Flohmi die Veranstalter zusätzlich nach Art. 14 DSGVO informieren? Speicherdauer festlegen, zum Beispiel: Abgelehnte Meldungen werden nach [x] Tagen gelöscht, die Meldung selbst (in der Tabelle „meldungen“) [x] Tage nach dem Markttermin. Auftragsverarbeitungsvertrag mit Supabase abschließen.]</p>
+<h2>6a. Konto und Profil (Supabase)</h2>
+<p>Ein Konto ist freiwillig, alle anderen Funktionen gehen auch ohne. Zum Anmelden gibst du deine <strong>E-Mail-Adresse</strong> ein. Supabase schickt dir eine E-Mail mit einem Anmelde-Link und einem Code; ein Passwort gibt es nicht. Alternativ meldest du dich mit deinem Google-Konto an (Abschnitt 6c). Gespeichert werden bei Supabase in Frankfurt am Main (EU):</p>
+<ul>
+  <li>deine E-Mail-Adresse und technische Anmeldedaten (Zeitpunkt der Anmeldung, Kennung des Kontos)</li>
+  <li>dein Profil: Anzeigename, freiwillig Ort oder PLZ und eine Kurzbeschreibung</li>
+  <li>deine Favoriten: welche Märkte du gemerkt hast (nur die Markt-ID und der Zeitpunkt). Sie sind nur für dich sichtbar und bleiben beim Abmelden erhalten</li>
+  <li>die Sprache, die du in Flohmi gewählt hast, damit sie nach jeder Anmeldung gilt</li>
+  <li>freiwillig ein Profilbild. Flohmi schneidet es auf deinem Gerät quadratisch zu und verkleinert es auf höchstens 256 × 256 Pixel, bevor es hochgeladen wird. Das Originalfoto verlässt dein Gerät nicht; Zusatzangaben im Foto (zum Beispiel Aufnahmeort) werden dabei nicht übernommen.</li>
+</ul>
+<p>Anzeigename, Profilbild, Ort und Kurzbeschreibung sind <strong>für andere sichtbar</strong>. Das Profilbild ist über eine öffentliche Adresse abrufbar. Die E-Mail-Adresse ist für andere nie sichtbar. Unter „Profil“ kannst du dein Profil und dein Profilbild jederzeit ändern oder entfernen und dein Konto mit „Konto löschen“ endgültig löschen; dabei werden Profilbild, Favoriten, Konto und Profil sofort entfernt. Wie das geht, auch ohne App, und welche Daten dabei gelöscht werden und welche bleiben, steht auf der Seite „Konto löschen“: <a href="https://sarahschwarz0803-spec.github.io/flohmi-rechtliches/konto-loeschen.html" rel="noopener">https://sarahschwarz0803-spec.github.io/flohmi-rechtliches/konto-loeschen.html</a></p>
+<p>[Rechtsgrundlage, zum Beispiel Art. 6 Abs. 1 lit. b DSGVO (Nutzungsvertrag für das Konto). Für den E-Mail-Versand: eigenen Mail-Dienst (SMTP) in Supabase eintragen und hier nennen, Auftragsverarbeitungsvertrag mit Supabase und dem Mail-Dienst.]</p>
+<h2>6b. Erinnerungen an Favoriten (nur Android-App)</h2>
+<p>In der Android-App kannst du unter „Profil“ Erinnerungen an deine Favoriten einschalten. Flohmi erinnert dich dann am Abend vor einem gemerkten Markt um 18 Uhr mit einer Benachrichtigung (Name, Datum und Uhrzeit des Markts).</p>
+<ul>
+  <li><strong>Berechtigung:</strong> Erst wenn du den Schalter einschaltest, fragt Android, ob Flohmi Benachrichtigungen zeigen darf (Berechtigung „Benachrichtigungen“). Damit Erinnerungen auch nach einem Neustart des Geräts kommen, darf die App außerdem nach dem Einschalten des Geräts geplante Erinnerungen wiederherstellen und Erinnerungen zu einem festen Zeitpunkt auslösen. Lehnst du ab, bleiben die Erinnerungen aus; alles andere funktioniert wie gewohnt. Du kannst die Berechtigung jederzeit in den Android-Einstellungen unter Apps → Flohmi → Benachrichtigungen ändern.</li>
+  <li><strong>Nur auf deinem Gerät:</strong> Die Erinnerungen werden mit dem Android-Wecker auf deinem Gerät geplant. Flohmi nutzt dafür <strong>keinen Push-Dienst</strong> (zum Beispiel Firebase Cloud Messaging), erzeugt keine Gerätekennung und kein Push-Token und schickt nichts an einen Server. Welche Märkte du gemerkt hast, steht ohnehin in deinem Konto (Abschnitt 6a).</li>
+  <li><strong>Löschen:</strong> Schaltest du die Erinnerungen aus, meldest du dich ab oder entfernst du einen Favoriten, löscht Flohmi die zugehörigen geplanten Erinnerungen sofort.</li>
+</ul>
+<p>[Rechtsgrundlage, zum Beispiel Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch Einschalten) bzw. § 25 Abs. 2 Nr. 2 TDDDG für das Speichern der Einstellung auf dem Gerät.]</p>
+<h2>6c. Anmelden mit Google</h2>
+<p>Statt mit einem Code per E-Mail kannst du dich auch mit deinem <strong>Google-Konto</strong> anmelden. Das ist freiwillig. Anbieter der Google-Anmeldung ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.</p>
+<p>Tippst du auf „Mit Google anmelden“, öffnet sich eine Seite von Google (in der Android-App in einem Chrome-Fenster). Dort meldest du dich bei Google an und wählst dein Konto aus. Google erhält dabei, wie bei jedem Seitenaufruf, deine <strong>IP-Adresse</strong> und Angaben zu Browser und Gerät; für die Anmeldung bei Google gelten die Datenschutzbestimmungen von Google (<a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a>).</p>
+<p>Nach deiner Zustimmung übermittelt Google an Supabase nur diese Angaben aus deinem Google-Konto: <strong>E-Mail-Adresse</strong>, <strong>Name</strong>, die Adresse deines <strong>Google-Profilbilds</strong> und eine Kennung deines Google-Kontos. Flohmi fragt keine weiteren Berechtigungen an, also zum Beispiel keinen Zugriff auf Kontakte, Kalender oder E-Mails. Supabase speichert diese Angaben in Frankfurt am Main (EU) bei deinem Konto (siehe Abschnitt 6a), damit du beim nächsten Mal wiedererkannt wirst. Gibt es schon ein Flohmi-Konto mit derselben E-Mail-Adresse, wird es verknüpft, es entsteht kein zweites Konto. Deinen Google-Namen schlägt Flohmi beim ersten Anlegen deines Profils als Anzeigenamen vor; du kannst ihn ändern. Dein Google-Profilbild zeigt Flohmi nicht an und übernimmt es nicht als Profilbild.</p>
+<p>Abmelden beendet die Anmeldung bei Flohmi. Bei Google bleibst du in deinem Browser so lange angemeldet, wie du es dort eingestellt hast. Die Verknüpfung mit Flohmi kannst du in deinem Google-Konto unter „Drittanbieter-Apps und -Dienste“ aufheben. Mit „Konto löschen“ werden alle Angaben bei Supabase gelöscht, auch die von Google.</p>
+<p>[Rechtsgrundlage, zum Beispiel Art. 6 Abs. 1 lit. b DSGVO (Nutzungsvertrag für das Konto) und Art. 6 Abs. 1 lit. a DSGVO (deine Einwilligung bei Google). Mögliche Übermittlung in die USA durch Google: Angemessenheitsbeschluss (EU-US Data Privacy Framework) prüfen und nennen.]</p>
+<h2>7. Marktdaten aus offenen Quellen</h2>
+<p>Die angezeigten Termine stammen unter anderem aus dem Veranstaltungskalender der Stadt Karlsruhe (Lizenz CC0). Beim Anzeigen dieser Daten werden keine Daten über dich an diese Quellen übermittelt.</p>
+<h2>8. Deine Rechte</h2>
+<p>[Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch, Datenübertragbarkeit, Widerruf der Einwilligung, Beschwerderecht bei einer Aufsichtsbehörde; Kontaktweg für Löschwünsche nennen.]</p>
+</main>
+<footer>
+  Flohmi zeigt Flohmärkte rund um Landau. Diese Seiten entstehen automatisch aus den Texten der App.
+</footer>
+</body>
+</html>
